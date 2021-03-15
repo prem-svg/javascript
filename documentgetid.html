@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>javascript document.getelementid</title>
+        <script>
+            function change() {
+                var changecolor=document.getElementById("p1");
+                changecolor.style.backgroundColor="green";
+                var changefont=document.getElementById("p2");
+                changefont.style.fontStyle="italic";
+                
+            }
+            function display() {
+                var empname=document.getElementById("name1").value;
+                var empid=document.getElementById("id1").value;
+                var empdisg=document.getElementById("designation").value;
+                alert("employee name: "+empname+" id: "+empid+" department: "+empdisg);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>javascript document get elementbyid</h1>
+        <p id="p1">i am prem and i am studying bsc computer science</p>
+        <p id="p2">computer language</p>
+        <input type="button" value="click" onclick="change();">
+        <!-- example2 -->
+        <form name="f1">
+            <br>
+            employee name
+            <input type="text" value="varun" id="name1">
+            <br>
+            employee id
+            <input type="text" value="00" id="id1">
+            <br>
+            designation
+            <input type="text" value="manager" id="designation">
+            <br>
+            <input type="button" value="submit" onclick="display();">
+        </form>
+    </body>
+</html>

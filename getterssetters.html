@@ -1,0 +1,42 @@
+<html>
+    <head><title>getters and setters</title>
+    <script>
+//var lecturer1={
+ //   name:'prem',
+   // joinyr:2019,
+    //salary:25000,
+    //bonus:0
+//};
+//lecturer1.bonus=10;
+//console.log(lecturer1);
+var lecturer2= {
+    name:'prem',
+    joinyr:2014,
+    _bonus:0,
+}
+Object.defineProperties(lecturer2,{
+    name:{
+        value:'reshmi'
+    },
+    joinyr:{
+        value:2000,
+        writable:true
+    },
+    bonus:{
+        get:function(){
+            return this._bonus;
+        },
+        set:function(newbonus){
+            if(this.joinyr<2017){
+                this._bonus=newbonus;
+            }
+        }
+    }
+});
+lecturer2.bonus=3;
+console.log(lecturer2);
+  //  </script></head>
+    //<body>
+        <h1>getters and setters</h1>
+    </body>
+</html>

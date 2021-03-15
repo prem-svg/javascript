@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>array method2</title>
+             <script>
+                 var day=['sunday','monday','thusday','wednesday','friday','saterday'];
+                 
+                //  document.write("<br>index of friday:",days.indexOf('friday'));
+                //  document.write("<br> last index of friday:",days.lastIndexOf('friday'));
+                //  var sep=days.join('--');
+                //  document.write("<br>after join:",sep);
+                //  var fill1=days.fill("week days",1,2);
+                //  document.write("<br>after fill:",days);
+                //  var value=[10,5,8,21,11,2];
+                //  var tofind=value.find(x=>x<10);
+                //  document.write("<br>aftre finding value:",tofind);
+                //  var findin=value.findIndex(x=>x>10);
+                //  document.write("<br>aftre findin value:",findin);
+                 var result1;
+                 var value1=[10,10,5,10,12,8];
+                 var sum=0;
+                 //for each
+                 document.write("<br>array element:",value1);
+                 value1.forEach(function(item)
+                                  {
+                     sum=sum+item;
+                     document.write("<br>",sum);
+                 })
+                 //reduce
+                 
+                
+                  result1=value1.reduce((sum=0,item)=>sum+item);
+                  document.write("<br>reducing array:",result1)
+                //  //isarrry
+                //  var status;
+                //  status =Array.isArray(value1);
+                //  document.write("<br>array:",status);
+                 //map
+                 var fruits=["bananna",'apple','mango','orange'];
+                 var lengths=fruits.map(item=>item.length);
+                 document.write("<br>length element:",lengths);
+                   var value3=['1','2','3','4','5'];
+                   result2=value3.map(x=>x+2);  
+                   document.write("<br>array element:",result2);  
+            //    copywithin
+            document.write("<br>days",day);
+            var result=day.copyWithin(0,2,3);
+            document.write("<br>result:",result);
+                //    var name=['ram','raja','dhanush','reshmen'];
+                //    document.write("<br>array element:",name); 
+                //    var prem = name.copyWithin(0,2,3);
+                //    document.write("<br>result",prem);
+                //document.write("<br>array element:",result);
+                // // var result=days.copywithin(0,2,3);
+                // // document.write("<br>copywithin:",result); 
+                // //every,some,filter
+                // var marks=[35,45,56,70,56];
+                // function check(value)
+                // {
+                //     return value>34;
+                // }      
+                // document.write("<br> to check every mark>35:",marks.every(check));
+                // document.write("<br> to check some mark>35:",marks.some(check));
+                // document.write("<br> to check filter mark>35:",marks.filter(check));
+                //include()
+                // var result2=day.includes("thursday");
+                // document.write("<br>include:",result2);
+                // var result=day.sort();
+                // document.write("<br>sorting array:",result);
+                
+                 </script>
+    </head>
+    <body>
+        <h1>array method2</h1>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>label statement</title>
+    <script>
+        var i;
+        document.write("entering the loop<br><br>");
+       //label name
+
+        outerloop: 
+               for(j=1;j<=3;j++)
+               {
+                   document.write("outer loop--->"+j+"<br>");
+        innerloop:
+              for(i=1;i<=5;i++)
+              {
+                  if(i==3)
+                  break innerloop;
+                  //if(j>2)
+                  //continue outerloop; //quite the outerloop
+                  //document.write("inner loop"+i+"<br>");
+             }           
+               }
+               document.write("<br>exiting loop");  
+    </script>
+
+        </head>
+        <body>
+            <h1>label statement</h1>
+        </body>
+</html>

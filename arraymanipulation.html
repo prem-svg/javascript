@@ -1,0 +1,38 @@
+<html>
+    <head><title>array manipulation</title></head>
+    <script>
+        var days=['tuesday','thursday','friday'];
+        document.write("arrays:",days);
+        document.write("<br>");
+        days.push('monday');
+        document.write("<br>after pushing:",days);
+        document.write("<br>poping days:",days.pop());
+        document.write("<br>after poping days:",days);
+        document.write("<br>");
+        document.write("<br>shifting monday:",days.shift());
+        document.write("<br>");
+        days.unshift('monday');
+        document.write("<br>after unshifting moday:",days);
+        document.write("<br>");
+        var weekends=['sturday','sunday'];
+        var misseddays=['monday','thusday'];
+        var result;
+        result=days.concat(weekends);
+        document.write("<br>after concatination:",result);
+        var seperator=result.slice(3);
+        document.write("<br>after slicing:",seperator);
+        var day=['sunday','monday','thusday','friday'];
+        document.write("<br>",day);
+        var days1=['tuesday','thursday','saterday'];
+        document.write("<br>days1:",days1);
+        var result=day.splice(2,1,'friday');
+        document.write("<br>after aplicing elements:",result);
+        document.write("<br>after removing",days1);
+        var marks=[1,2,3,4,5,6];
+        mark=marks.reverse();
+        document.write("<br> after reversing:",mark);
+  </script>
+    <body>
+        <h1>array manipulation</h1>
+    </body>
+</html>

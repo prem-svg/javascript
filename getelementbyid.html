@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>getelement by id</title>
+        <script>
+            function check() {
+                var frut=document.getElementsByName("fruit");
+                {
+                    if(frut[1].checked)
+                    {
+                        alert("orange is a citrus fruit");
+                    }
+                    else{
+                        alert("mango is not a citrus fruit");
+                    }
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h4>dom -element bby name</h4>
+        select citrus fruits
+        <br>
+        mango
+        <input type="radio" name="fruit">
+        orange
+        <input type="radio" name="fruit">
+        <input type="button" value="click" onclick="check();">
+    </body>
+
+    
+</html>

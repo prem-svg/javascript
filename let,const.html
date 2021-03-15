@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <title>javascript let,const method</title>
+    <script>
+        var channel1='programming line';
+        function display(){
+            document.write("<br>channel name",channel1);
+        }
+        document.write("<br>channel name",channel1);
+        display();
+        //function scope
+        function display(){
+            var channel1='programming line';
+            document.write("<br>channel name",channel1);
+        }
+        display();
+        //block scope
+        { 
+            let x=10;
+            document.write("<br>value of x:",x);
+        }
+       // document.write("<br>value of x:",x);
+                                                  //loop scope
+        document.write("<br>");
+        for(let i=10;i>0;i--)
+        
+        {
+            let x=10;
+            document.write("<br>value of i:",i);
+            document.write("<br>value of x:",x);
+        }  
+        //redeclering variable
+        var x=100;
+        //let x=19;
+        document.write("<br>value of x:",x);
+
+        //hoisting
+        flag=true;
+        document.write("<br>value of x:",flag);
+        var flag;
+        //const
+        const PI=3.14;
+        const cname={name:'programming line',subbject:'javascript',author:'rakesh'};
+console.log(cname);
+cname.subject='html';
+console.log(cname);
+const clang=['html','javascript','css'];
+console.log(clang);
+clang[0]='c';
+clang.push('jquery');
+console.log(clang);
+
+
+
+
+        
+        
+    </script>
+    </head>
+
+    <body>
+        <h1>javascript let,const object</h1>
+    </body>
+</html>

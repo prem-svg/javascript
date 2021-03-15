@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>window object in javasript</title>
+        <script>
+            //properties
+                   function prop(){
+            var width=window.innerWidth;
+            var height=window.innerHeight;
+            document.write("<br>width: "+width+"<br>height: "+height);
+        }
+        prop();
+        //methods
+        var mywin;
+        function openw(){
+            window.open("https://www.annauniv.edu/");
+        }
+        function openmywin(){
+            mywin=window.open("","mywin","width=200,height=300");
+            
+        }
+        function movewin() {
+            mywin.moveTo(500,100);
+            mywin.focus();
+            
+        }
+        function resizewin() {
+            mywin.resizeTo(100,250);
+            mywin.focus();
+            
+        }
+        function closewin() {
+            mywin.close();
+        }
+        function timeoutwin() {
+            setTimeout(function(){
+            
+                document.write("<br>welcome to programming line");
+            },2000);
+            
+        }
+        
+
+        </script>
+    </head>
+    <body>
+        <input type="button" value="open" onclick="openw()">
+        <br><br>
+        <input type="button" value="openmin" onclick="openmywin()">
+        <br><br>
+        <input type="button" value="move" onclick="movewin()">
+        <br><br>
+        <input type="button" value="resize" onclick="resizewin()">
+        <br><br>
+        <input type="button" value="close" onclick="closewin()">
+        <br><br>
+        <input type="button" value="timer" onclick="timeoutwin()">
+        <br><br>
+    </body>
+</html>

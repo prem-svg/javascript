@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>jsnumbers</title>
+        <script>
+            
+         
+         var num1=2,num2=34,value=1000.0000,nvalue=0.005;
+         document.write("<br>numbers:",num1+","+num2+","+value+","+nvalue);
+         var num_obj=new Number(456);
+         document.write("<br>number using object:",num_obj);
+            //properties
+             var number=34;
+         document.write("<br>maximum value:",Number.MAX_VALUE);
+         document.write("<br>maximum value:",Number.MIN_VALUE);
+         document.write("<br>maximum value:",Number.POSITIVE_INFINITY);
+         document.write("<br>maximum value:",Number.MAX_VALUE);
+         document.write("<br>maximum value:",Number.NEGATIVE_INFINITY);
+         document.write("<br>maximum value:",Number.NaN);
+         var x=100/0,y=-10/0,z='hello'/10;
+         document.write("<br>value of 100/0:",x);
+         document.write("<br>value of -10/0:",y);
+         document.write("<br>value of 'hello'/10:",z);
+         //methods
+         //infinite
+         var x=10;
+         document.write("<br><b>isfinite</b>");
+         document.write("<br>",Number.isFinite(x));
+         document.write("<br>",Number.isFinite(-Infinity));
+         document.write("<br>",Number.isFinite(NaN));         
+         //integer
+         document.write("<br><b>integer</b>");
+         document.write("<br>",Number.isInteger(x));
+         document.write("<br>",Number.isInteger(-2));
+         document.write("<br>",Number.isInteger(-2.5));
+         document.write("<br>",Number.isInteger(2.5));
+         document.write("<br>",Number.isInteger(10/3));
+          //toexponential
+          var test=5.56789;
+         document.write("<br><b>toexponential</b>:",test);
+          document.write("<br>expo of",+test.toExponential(1));
+          document.write("<br>expo of",+test.toExponential(2));
+          document.write("<br>expo of",+test.toExponential(4));
+          //precision
+          var num=10.143714;
+          document.write("<br><b>precision<b>",num);
+            document.write("<br>precision of",+num.toPrecision());
+            document.write("<br>precision of",+num.toPrecision(2));
+            document.write("<br>precision of",+num.toPrecision(3));
+         //tofixed
+         var x1=9.656;
+         document.write("<br><b>tofixed</b>",x1);
+         document.write("<br>tofixed of",+x1.toFixed(0));
+         document.write("<br>tofixed of",+x1.toFixed(2));
+         document.write("<br>tofixed of",+x1.toFixed(4));
+         document.write("<br>tofixed of",+x1.toFixed(6));
+         //parsefloat
+         var a="50";
+         var b="50.25";
+         var c="string";
+         document.write("<br><b>conversion of variable to number</b>");
+         document.write("<br>"+Number.parseFloat(a)+"<br>");
+         document.write("<br>"+Number.parseFloat(b)+"<br>");
+         document.write("<br>"+Number.parseFloat(c)+"<br>");
+         document.write("<br>"+Number.parseInt(a)+"<br>");
+         document.write("<br>"+Number.parseInt(b)+"<br>");
+         document.write("<br>"+Number.parseInt(c)+"<br>");  
+         document.write("<br>"+Number(true));
+         document.write("<br>"+Number(false));
+         document.write("<br>"+Number("10"));
+         document.write("<br>"+Number("hi"));
+         //tostring
+         var exnum=32;
+         document.write("<br>decimal:"+exnum.toString(10));
+         document.write("<br>decimal:"+exnum.toString(16));
+         document.write("<br>decimal:"+exnum.toString(8));
+         document.write("<br>decimal:"+exnum.toString(2));
+         document.write("<br>typeof:"+typeof(exnum.toString(10)));
+
+         
+         </script>
+    </head>
+    <body>
+        <h1>java scriot numbers</h1>
+    </body>
+</html>

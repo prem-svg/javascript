@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>regular expression</title>
+        <script>
+            var regex="programming line-computer";
+            document.write("<b>string:</b>",regex);
+            document.write("<br><b>search'program'</b>:",regex.search(/computer/));
+            document.write("<br><b>replace computer to system'program'</b>:",regex.replace(/computer/i,'system'));
+            document.write("<br><b>match'program'</b>:",regex.match(/program/gmi));
+            var regex1="programming line-/n programming language ";
+            document.write("<br><b>multiline match program </b>:",regex1.match(/l/gmi));
+            //patterns
+            var accdetails='IndBnk 78782341890 SB';
+            var patt1=/[Ind]/g;
+            var patt2=/[782]/g;
+            var patt3=/[7878\SB]/g;
+            document.write("<br><b>[Ind]pattern</b>:",accdetails.match(patt1));
+            document.write("<br><b>[782]pattern</b>:",accdetails.match(patt2));
+            document.write("<br><b>[7878\SB]pattern</b>:",accdetails.match(patt3));
+            //example
+            var regex2=/dog/g;
+            var sample="the quick brown for jumps over lazydog";
+            document.write("<br><b>output</b>:",sample.match(regex2));
+            //meta character
+            var accdetails='IndBnk 78782341890 SB';
+            var char1=/\d/g;
+            var char2=/\s/g;
+            var char3=/0\b/g;
+            document.write("<br><b>digit pattern</b>:",accdetails.match(char1));
+            document.write("<br><b>white spacepattern</b>:",accdetails.match(char2));
+            document.write("<br><b>beginning pattern</b>:",accdetails.match(char3));
+            //regex-quantities
+            var num="98.897062348";
+        var quan1=/9+/g;
+        document.write("<br>",num.match(quan1));
+        var quan2=/98*/g;
+        document.write("<br>",num.match(quan2));
+        var quan3=/89?/g;
+        document.write("<br>",num.match(quan3));
+        //methods
+        var name='rakesh';
+        var pattern=/h/;
+        document.write("<br><b>test()-h</b>:",pattern.test(name));
+        document.write("<br><b>exec()-h</b>:",pattern.exec(name));
+        var obj=/h/.exec('sweet home');
+        document.write("<br>",obj[0],"",obj.index,"",obj.input);
+
+
+        </script>
+    </head>
+    <h1>regular expreesion</h1>
+</html>

@@ -1,0 +1,113 @@
+<html>
+    <head><title>array js</title>
+    <script>
+        //by literal
+        var student=["linkesh","rakesh","harish","santhosh","monica"];
+        document.write("student list",student);
+        var colors=[];
+        colors[0]='white';
+        colors[1]='grey';
+        document.write("<br>colors list",colors);
+        var mark=[5];
+        mark[0]=78;
+        mark[1]=89;
+        mark[2]=91;
+        mark[3]=93;
+        mark[4]=77;
+        document.write("<br> list of marks:",mark)
+        //constructor
+        var topic=new Array();
+        topic[0]="java script";
+        topic[1]="HTMl";
+        topic[2]="CSS";
+        topic[3]="JAVA";
+        document.write("<br>list of topics:",topic);
+         
+        var info=new Array("rakesh",28,"programmingl line",350000,2.5);
+        document.write("<br>information",info);
+        document.write("<br>");
+        //array amnipulation
+        var i;
+        for(i=0;i<topic.length;i++)
+        {
+            document.write("<br>",topic[i]);
+        }
+        var j;
+        for(j of topic)
+        {
+            alert(j);
+        }
+  //for loop
+   var i=0;
+   for(i in topic)
+   {
+       document.write("<br>",topic[i]);
+   }
+   var name='rakesh';
+   for(var i=0;i<name.length;i++)
+   {
+       document.write("<br>",name[i]);
+   }
+     var i,sum=0;
+     for(i=0;i<mark.length;i++)
+    {
+        sum+=mark[i];
+        document.write("<br>",mark[i]);
+    } 
+    document.write("<br>total mark:",sum);
+    
+//example5
+var list=[12,3,4,5,455,45,45,2,5];
+var key1,count=0;
+for( key1=0; key1<list.length; key1++)
+{
+    if(list[key1]<=10)
+    {
+        count++;
+    }
+}
+alert("number less then 10 in the list:"+ count);
+var topic=new Array();
+topic[0]="javascript";
+topic[1]="html";
+
+topic[2]="java";
+topic[3]="css";
+topic[4]="c";
+topic[2]="python";
+document.write("<br>list of topics:",topic);
+var family=new Array();
+family[0]='dhanam';
+family[1]='prem';
+family[2]='prasath';
+family[3]='vani';
+document.write("<br>list of family",family);
+
+var x;
+        for(x=0;x<topic.length;x++)
+        {
+            document.write("<br>",topic[x]);
+        }
+        var j;
+        for(j of fsmily)
+        {
+            alert(j);
+        }
+  //for       
+    </script>
+    </head>
+    <body>
+        <h1>array in javascript</h1>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
