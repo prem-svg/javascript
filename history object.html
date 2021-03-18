@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>history object in javascript</title>
+        <script>
+            //history property
+            function len(){
+                document.write("<br>no of visited page",history.length);
+            }
+            len();
+            //history methods
+            function  back() {
+                window.history.back();
+            }
+            function  Forward() {
+                window.history.forward(2);
+            }
+            function go() {
+                window.history.go(1);
+            }
+        </script>
+        <style>
+            .button1{
+                padding: 10px;
+                border: none;
+                background-color: blue;
+                border-radius: 10px;
+                text-align: center;
+                color:white;
+            }
+        </style>
+    </head>
+    <body> 
+        <br>
+        <input type="button" class="button1" value="back" onclick="back()">
+    <br><br>
+    <input type="button" class="button1" value="Forward" onclick="Forward()">
+    <br><br>
+    <input type="button" class="button1" value="go" onclick="go()">
+    <br><br>
+    
+
+    </body>
+
+</html>

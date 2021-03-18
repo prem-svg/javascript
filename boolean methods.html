@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            // var flag=new Boolean(true);
+            // var status=false;
+            // document.write("<br> tostring:<br>",flag.toString());
+            // document.write("<br> tovalueof:<br>",flag.valueOf());
+            // document.write("<br> tovalueof:<br>",status.valueOf()); 
+            function readNumber()
+            {
+                var num;
+                do{
+                 num=prompt=("enter the number plese?",0);
+                 
+                }while(!isFinite(num));
+                if(num===null||num==" ")
+                {
+                    return null;
+                }
+                return +num;
+
+            }   
+            alert('read:${readNumber()}');        
+        </script>
+    </head>
+    <body><h1>boolean value of js</h1></body>
+</html>

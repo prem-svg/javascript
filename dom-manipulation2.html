@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>DOM-manipulation mathod2</title>
+    </head>
+    <body>
+        <h3>replace child,childelement count</h3>
+        <div id="f1">
+            <h5 id="title">i am prem</h5>
+            <p id="a">i am frontend developer</p>
+            <p id="contant">computer programming language are explained here</p>
+</div>
+<h4>i learning javascript</h4>
+<div id="points">
+<ul id="uses">
+<li>removing element</li>
+<li>add position of webpage</li>
+<li>we can moniter event like hover,click</li>
+<li>this is dom DOM-manipulation</li>
+</ul>
+</div>
+<input type="button" value="count" onclick="childcount();">
+<input type="button" value="delete" onclick="removechild();">
+<input type="button" value="replace" onclick="replacechild();">
+<input type="button" value="list remove" onclick="removelist();">
+<script>
+function childcount() {
+    var cnt=document.getElementById("uses").childElementCount;
+    alert("no of child element inside UL :"+cnt);
+}
+function removechild(){
+    var parent1=document.getElementById("f1");
+    var child1=document.getElementById("a");
+    parent1.removeChild(child1);
+}
+function replacechild() {
+    var Parent=document.getElementById("f1");
+    var chld= document.getElementById("contant");
+    var elem=document.createElement("p");
+    var tet=document.createTextNode("supsceibe to our channel for more vvideos");
+    elem.append(tet);
+    Parent.replaceChild(elem,chld);
+}
+function removelist(){
+    var element=document.querySelector("ul");
+    var chd=element.firstElementChild;
+   // while(chd){
+        element.remove(chd);
+     //   chd=element.firstElementChild
+    //}
+}
+</script>
+    </body>
+</html>

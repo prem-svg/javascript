@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>java scriipt</title>
+        <script>
+            function verify()
+{
+    var emp_name = document.getElementById("n1").value;
+    var emp_age = document.getElementById("ag").value;
+    var phone_no = document.getElementById("ph").value;
+    var emp_exp = document.getElementById("exp").value;
+    var age,exper,phone;
+    document.write("name of employee:"+ emp_name);
+    document.write("<br>");
+    document.write("type of name"+(typeof emp_name));
+    document.write("<br><br><br>");
+    document.write("age of employee:"+ emp_age);
+    document.write("<br>");
+    document.write("type of age"+(typeof emp_age));
+    document.write("<br><br><br>");
+    document.write("phone no of employee:"+ phone_no);
+    document.write("<br>");
+    document.write("type of phoneno"+(phone_no));
+    document.write("<br><br><br>");
+    document.write("experience of employee:"+ emp_exp);
+    document.write("<br>");
+    document.write("type of work experience"+(typeof emp_exp));
+    document.write("<br>");
+    age=parseInt(emp_age);
+    document.write(age);
+    document.write(typeof age);
+    document.write("<br><br><br>");
+    phone=parseInt(phone_no);
+    document.write(phone);
+    document.write(typeof phone);
+    document.write("<br><br><br>");
+    exper =parseFloat(emp_exp);
+    document.write(exper);
+    document.write(typeof emp_exper);
+    document.write("<br><br><br>");
+   }          
+        </script>
+ 
+    </head>
+    <body>
+        <h1>employee deatails</h1>
+       employee name
+       <input type="text" name="name1" id="n1"><br><br>
+       enter the age
+       <input type="text" name="age" id="ag"><br><br>
+       enter phone number
+       <input type="number" name="phoneno" id="ph" value=""><br><br>
+       enter the experience
+       <input type="number" name="exp" id="exp"><br><br>
+       <input type="submit" value="submit" onclick="verify();">
+    </body>
+</html>

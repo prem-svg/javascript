@@ -1,0 +1,52 @@
+ <html>
+    <head>
+        <title>this.obbject in java script</title>
+        
+    </head>
+    <body>
+        <br>
+        <button onclick="this.style.color='red'"> click here</button>
+        <h1>this object in javascript</h1>
+        <script>
+            var name='rakesh';
+            document.write(this.name);
+            var owner=this;
+            document.write(owner);
+            var book={
+                name:"programming in c",author:'bala gurusamy',publisher:"eswer gurusamty",publisher:"eswer press",
+               title: function show()
+                {
+                   return this.name+" by "+this.author;
+                }
+            };
+            document.write('<br>',book.title());
+            document.write("<br>");
+            function show()
+            {
+            'use strict mode'
+        return this    
+        }
+        document.write('<br>',show());
+        
+       var calc={
+           sum(){
+               return this.a + this.b;
+           },
+           mul(){
+               return this.a*this.b;
+           },
+        
+       read()
+       {
+           this.a=+prompt("enter the value",1);
+           this.b=+prompt("enter the value",2);
+       }
+    };
+    calc.read();
+    document.write("<br>addition:",calc.sum());
+    document.write("<br>multiplication:",calc.mul());
+        
+        </script>
+
+    </body>
+</html>

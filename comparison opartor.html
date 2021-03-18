@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><title>js</title></head>
+  <script type="text/javascript">
+      function compare()
+      {
+          var string1='2',value= 2;
+          if(string1 == value)
+          {
+              alert("both value'2' and 2 are same");
+          }
+          else
+          {
+            alert("both value'2' and 2 are not same");
+          }
+        
+          if(string1 === value)
+          {
+              alert("both variable type are same");
+          }
+          else
+          {
+            alert("both variable type are same");
+          }
+      }
+      function verify()
+      {
+          var name = document.getElementById("n1").value;
+          var age = document.getElementById("ag").value;
+          var nation1 = document.getElementById("n2").value;
+          if(nation1 != "indian")
+      {
+      alert("only indian can able to vote");
+      }
+      else{
+          if(age >= 18)
+          {
+              if(age == 18)
+              {
+                  document.write("weclome to first time to vote");
+              }
+              document.write("eligible to vote");
+            }}
+
+if(age>18)
+{
+document.write("not eligible to vote")
+}           
+    }
+  </script>
+  <body>
+   <h1>user details</h1>
+   enter the name
+    <input type="text" name="name1" id="n1"><br><br>
+    enter the age
+    <input type="number" name="age" id="ag"><br><br>
+    enter the nationality
+    <input type="text" name="nation" id="n2"><br><br>
+    <input type="submit" value="submit" onclick="verify();">
+    <input type="button" value="check" onclick="compare();">
+     </body>
+</html>

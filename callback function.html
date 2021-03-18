@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>callback function</title>
+        <script>
+// function mainfun(callback){
+//     console.log("main function");
+//     callback();
+// }
+// function callback(){
+//     console.log("callback function")
+// }
+// mainfun(callback);
+var a=20,b=10;
+function add(mul){
+    var result=a+b;
+    document.write("<br>addition : "+result);
+    mul();
+};
+function mul(){
+    var result=a-b;
+    document.write("<br>multiplication : "+result);
+}
+add(mul);
+</script>
+    </head>
+    <body>
+        <h1>call back function</h1>
+    </body>
+</html>

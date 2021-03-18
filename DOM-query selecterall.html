@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>DOM-javascript queryselectorall</title>
+    <script>
+        function para(){
+            var p1=document.querySelectorAll("p");
+            for(i=0;i<p1.length;i++){
+                p1[i].style.color="blue";
+            }
+        }
+        function func(){
+            var clr=document.querySelectorAll("h4,li");
+            for(i=0;i<clr.length;i++){
+                clr[i].style.color="red";
+            }
+        }
+        
+    </script>
+    </head>
+    <body>
+        <h4>DOM method</h4>
+        <h5>Query selector All</h5>
+        <div>
+            <p id="intro">
+                programming line by rakeesh many compyter language are available in this channel
+            </p>
+            <p class="comp">
+                languages ara explained by well experined lactures
+            </p>
+            <p class="comp">
+                there are many levels such as beginner,intermediate,advanced levels
+            </p>
+            </div>
+            <ul id="pl">
+                <li>c</li>
+                <li class="main">c++</li>
+                <li>java</li>
+                <li>python</li>
+            </ul>
+            <button onclick="para();">click</button>
+            <button onclick="func();">change</button>
+    </body>
+</html>

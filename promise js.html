@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title>promise</title>
+        <script>
+           
+           // var person=true;
+            // var p=new Promise((resolve,reject)=>{
+            //     if(person){
+            //         resolve("success");
+            //     }
+            //     else{
+            //         reject("fail");
+            //     }
+            // })
+            //     p.then((massage)=>{console.log("then "+massage);})
+            //     p.catch((massage)=>{console.log("catch "+massage);})
+                     var age=(prompt("enter the age","12"))
+                     var validate=new Promise(function (resolve,reject)
+                      {
+                         if(age>=18)
+                         {
+                             resolve("allowd to vote");
+                         }
+                         else(age<18)
+                         {
+                             reject(" not allowd to vote");
+                         }
+                     })
+                     validate.then((result)=>{console.log("you are "+result);})
+                     .catch((result)=>{console.log("catch"+result);})
+        </script>
+    </head>
+</html>

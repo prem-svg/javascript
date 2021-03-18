@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>conditional operator</title>
+        <script>
+            function check()
+            {
+                var name=document.getElementById("n1").value;
+                var mark=document.getElementById("m1").value;
+                (mark >=35)?document.write(name+" <br> pass"):document.write(name+" <br>fail");
+        }
+        </script>
+    </head>
+    <body>
+        <h1>student details</h1>
+        enter the name
+        <input type="text" name="name1" id="n1"> 
+        enter the mark
+        <input type="number" name="mark" id="m1"> 
+        <input type="submit" value="submit" onclick="check();">
+    </body>
+<html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            dom-javascript getelement by class
+        </title>
+        <script>
+            function show() {
+                var clas=document.getElementsByClassName("intro");
+                var len=clas.length;
+                alert("intro count",len);
+                for(i=0;i<clas.length;i++)
+                {
+                   clas[i].style.backgroundColor="yellow";
+                   clas[i].style.color="red";
+                }
+                var change=document.getElementsByClassName("js");                
+                var len1=change.length;
+                alert("js count",len1);
+                for(i=0;i<change.length;i++)
+                {
+                   change[i].style.backgroundColor="green";
+                   change[i].style.color="yellow";
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h4> DOM-select ny class name</h4>
+        <div>
+            <p  id="p1" class="intro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eveniet illum nam voluptatem eligendi porro quasi, consequuntur magnam ex deleniti distinctio eaque libero, doloremque minus saepe adipisci qui commodi aliquam!
+            </p>
+            <p class="exp">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae accusamus ipsam, consequuntur molestiae cupiditate aliquam? Mollitia qui officiis magnam blanditiis voluptate numquam laboriosam iusto, corrupti quam veritatis eveniet, reiciendis dolorem?
+            </p>
+            <p class="intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta alias fugiat repellat error eaque illo in iure eligendi reiciendis. Dicta, quod laborum. Voluptate laborum qui unde ab suscipit laboriosam est.
+            </p>
+            <p class="js">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore consectetur, quae fugit tenetur quibusdam ducimus libero molestias commodi, nemo sunt eveniet a magnam repellendus architecto natus voluptates eius aperiam aut.
+            </p>
+        </div>
+        <input type="button" value="click" onclick="show();">
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>dom-manipulation method3</title>
+    </head>
+    <body>
+        <h3>DOM-getattribute,setattribute</h3>
+        <div>
+            <a href="https://google.com" target="_blank" id="mylink">google</a><br>
+            <a href="#" id="link1">my</a><br>
+            <a href="https://youtube.com" id="link2">youtube</a><br>
+
+        </div>
+        <br>
+        <button onclick="getat();">get attrbiute</button>
+        <button onclick="setat();">set attrbiute</button>
+        <button onclick="deleteat();">delete</button>
+    <script>
+        function getat() {
+           var links=document.getElementById("mylink");
+           var href=links.getAttribute(href);
+           alert("limk goes to"+href);
+           var tar=links.getAttribute("target");
+           alert("target is "+tar);
+        }
+        function setat() {
+            var link=document.getElementById("link1");
+            link.setAttribute("href","http://www.gmail.com");
+        }
+        function deleteat() {
+            var link=document.getElementById("link2");
+            link.removeAttribute("href");
+            
+        }
+    </script>
+    </body>
+</html>

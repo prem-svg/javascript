@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            DOM-property method
+        </title>
+        <script>
+            function show() {
+                var p1=document.getElementById("para1");
+                p1.innerHTML="welcome to learn JS-DOM";
+                
+            }
+            function lis(){
+                var l1=document.getElementById("list1");
+                console.log(l1.innerHTML);
+                l1.innerHTML="<li>HTML</li><li>JAVA</li><li>CSS</li><li>ANGULAR</li>";
+                
+            }
+            function formreg() {
+                var info="name:<input type='text' name='name'><br>\
+                age:<input type='text' name='age'<br>\
+                <input type='submit' onclick='info1'>";
+                var reg=document.getElementById("form");
+                reg.innerHTML=info;
+                }
+            function info1() {
+                var in1=document.getElementById("tnk");
+                in1.innerHTML="thank you for rregistration";
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h4>javascript DOM-property</h4>
+        <p id="para1"></p>        
+        <ul id="list1">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+        click to register<br>
+        <input type="button" value="register" onclick="formreg();">
+        <div id="form"></div>
+        <p id="tnk"></p>
+        <input type="button" value="sumbit" onclick="info1();"><br>
+        <input type="button" value="message" onclick="show();"><br>
+        <input type="button" value="list" onclick="lis();"><br>
+       
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>math obbject in java script</title>
+        <script>
+            // document.write("<br><b>mathE:</b>"+Math.E);
+            // document.write("<br><b>mathPI:</b>"+Math.PI);
+            // document.write("<br><b>squre root of 2:</b>"+Math.SQRT2);
+            // document.write("<br><b>squre root of 1/2:</b>"+Math.SQRT1_2);
+            // document.write("<br><b>math natural algorithm of 2:</b>"+Math.LN2);
+            // document.write("<br><b>math natural alogrithm of 10:</b>"+Math.LN10);
+            // document.write("<br><b>math base2 algortim of E:</b>"+Math.LOG2E);
+            // document.write("<br><b>math base10 algortim of E:</b>"+Math.LOG10E);
+                    //math methods
+                    function displayAbs()
+                    {
+                        var num1=document.getElementById("num").value;
+                        document.getElementById("l1").innerHTML=Math.abs(num1);
+                    }
+                    function displayceil()
+                    {
+                        var num1=document.getElementById("ceil1").value;
+                        document.getElementById("l2").innerHTML=Math.ceil(num1);
+                    }
+                    function displayflr()
+                    {
+                        var num1=document.getElementById("flr").value;
+                        document.getElementById("l3").innerHTML=Math.floor(num1);
+                    }
+                    function displaymax()
+                    {
+                        var num1=[12,34,3,56,78,30];
+                        document.getElementById("l4").innerHTML=Math.max(...num1);
+                    }
+                    function displaymin()
+                    {
+                        var num1=[12,34,3,56,78,30];
+                        document.getElementById("l5").innerHTML=Math.min(...num1);
+                    }
+                    function displaysqrt()
+                    {
+                        var num1=document.getElementById("sqrt").value;
+                        document.getElementById("l6").innerHTML=Math.sqrt(num1);
+                    }
+                    function displayround()
+                    {
+                        var num1=document.getElementById("round").value;
+                        document.getElementById("l7").innerHTML=Math.sqrt(num1);
+                    }
+                    function displaypow()
+                    {
+                        var num1=document.getElementById("base").value;
+                        var num2=document.getElementById("expo").value;
+                        document.getElementById("l8").innerHTML=Math.pow(num1,num2);
+                    }
+                    function displaylog()
+                    {
+                        var num1=document.getElementById("log1").value;
+                        document.getElementById("l9").innerHTML=Math.log(num1);
+                    }
+                    function displaytrun()
+                    {
+                        var num1=document.getElementById("trunc").value;
+                        document.getElementById("l10").innerHTML=Math.trun(num1);
+                    }
+                    function displaysign()
+                    {
+                        var num1=document.getElementById("sign").value;
+                        document.getElementById("l11").innerHTML=Math.sign(num1);
+                    }
+                    function displayexp()
+                    {
+                        var num1=document.getElementById("exp").value;
+                        document.getElementById("l12").innerHTML=Math.exp(num1);
+                    }    
+                    function displayrnd()
+                    {
+                        document.getElementById("l13").innerHTML=Math.random()*10;
+                    }
+                    function displaycuberoot()
+                    {
+                        var num1=document.getElementById("cuberoot").value;
+                        document.getElementById("l14").innerHTML=Math.log(num1);
+                    }
+                
+        </script>
+    </head>
+    <body>
+        <!-- <h1>math object java script</h1>
+        <p id="mathprop"></p> -->
+        <form>
+            enter number to find absolute:
+            <input type="text" id="num">
+            <input type="button" onclick="displayAbs()" value="Abs">
+            <label id="l1"></label><br><br>
+            enter number to find ceil:
+            <input type="text" id="ceil1">
+            <input type="button" onclick="displayceil()" value="ceil">
+            <label id="l2"></label><br><br>
+            enter the number to find floor:
+            <input type="text" id="flr">
+            <input type="button" onclick="displayflr()" value="floor">
+            <label id="l3"></label><br><br>
+            enter the number to find max of an array[12,34,3,56,78,30]:        
+            <input type="button" onclick="displaymax()" value="max">
+            <label id="l4"></label><br><br>
+            to find an min of array[12,34,3,56,78,30]:
+            <input type="button" onclick="displaymin()" value="min">
+            <label id="l5"></label><br><br>
+            enter the number to find the square root:
+            <input type="text" id="sqrt">
+            <input type="button" onclick="displaysqrt()" value="sqrt">
+            <label id="l6"></label><br><br>
+            enter the number to find cuberoot:
+            <input type="text" id="cuberoot">
+            <input type="button" onclick="displaycuberoot()" value="cuberoot">
+            <label id="l13"></label><br><br>
+            enter the number to find round:
+            <input type="text" id="round">
+            <input type="button" onclick="displayround()" value="round">
+            <label id="l7"></label><br><br>
+            to find power:
+            Base:
+            <input type="text" id="base">
+            Exp:
+            <input type="text" id="expo">
+            <input type="button" onclick="displaypow()" value="power">
+            <label id="l8"></label><br><br>
+            Enter the number to find log:
+            <input type="text" id="log1">
+            <input type="button" onclick="displaylog()" value="log">
+            <label id="l9"></label><br><br>
+            Enter the number to find tranc:
+            <input type="text" id="tranc">
+            <input type="button" onclick="displaytranc()" value="round">
+            <label id="l10"></label><br><br>
+            enter the number to find sign:
+            <input type="text" id="sign">
+            <input type="button" onclick="displaysign()" value="sign">
+            <label id="l11"></label><br><br>
+            enter the number to find exp:
+            <input type="text" id="exp">
+            <input type="button" onclick="displayexp()" value="exponent">
+            <label id="l12"></label><br><br>
+            to find randon(1-10):
+            <input type="button" onclick="displayrnd()" value="random">
+            <label id="l14"></label><br><br>
+        </form>
+    </body>
+</html>

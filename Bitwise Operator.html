@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operator</title>
+    <script>
+        var num1=11,num2=7,value1,value2,value3=0;
+        value1=num1.toString(2);
+        value2=num2.toString(2);
+        document.write("<br> binary value of 11<br>");//0000 1011
+
+        document.write("<br> binary value of 7<br>");//0000 0011
+        //AND
+        value3=num1&num2;
+        document.write("<br> AND result of 11 and 7 : "+value3.toString(2)+'<br>');
+        //OR
+        value3=num1/num2;
+        document.write("<br> OR result of 11 and 7 : "+value3.toString(2)+'<br>');
+        //XOR
+        value3=num1^num2;
+        document.write("<br> XOR result of 11 and 7 : "+value3.toString(2)+'<br>');
+        //NOT
+        value3=~num2;
+        document.write("<br> NOT result of 7 : "+value3.toString(2)+'<br>');
+        //LEFTSHIFT
+        document.write("<br> left shift 11 : "+(num1>>1).toString(2)+'<br>');
+        //RIGHT SHIFT
+        document.write("<br> right shift 11 : "+(num1<<1).toString(2)+'<br>');
+        //ZERO FILL TO RIGHT
+        document.write("<br> zero fill right of 11 : "+(num1>>1).toString(2)+'<br>');
+    </script>
+</head>
+<body>
+    <h1>Bitwise Operator</h1>
+</body>
+</html>
