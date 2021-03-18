@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key events</title>
+</head>
+<body>
+    <script>
+        function mypress() {
+            alert("key is pressed")
+        }
+        function mydown(event) {
+            alert("ascii code : "+event.keyCode);  
+        }
+        function myup(){
+  var value1=document.getElementById("bra");
+  value1.value=value1.value.toUpperCase();
+        }
+        
+        function mydow() {
+            document.getElementById("occ").style.background="green"; 
+        }
+        function myup1(){
+            document.getElementById("occ").style.background="red"; 
+        }
+    </script>
+    <div class="login">
+        
+        <h1>login here</h1>
+        <form action="output.html"  method="post" name="form1">
+            <fieldset>
+                <legend>login</legend>
+            <p>user name</p>
+            <input type="text" id="name" name="" placeholder="Enter the username"onkeypress="mypress()" >
+            <p>password</p>
+            <input type="password" id="pass1" name="" placeholder="Enter the password" onkeydown="mydown(event)">
+            <input type="submit" name="" value="login">
+            <p>enter the branch</p>
+            <input type="text" id="bra" name="" placeholder="Enter the number" onkeyup="myup()">
+            <p>enter the occation</p>
+            <input type="text" id="occ" name="" placeholder="Enter the occation" onkeyup="myup1()" onkeydown="mydow()">
+        </fieldset>
+        </form>
+    
+</body>
+</html>
