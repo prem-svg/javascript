@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype-in javscript</title>
+</head>
+<body>
+    <h2>prototype-in javscript</h2>
+    <script>
+        function person(firstname,secondname){
+            this.firstname=firstname;
+            this.secondname=secondname;
+        }
+        person.prototype["display"]=function(){
+            return "FULL NAME = "+this.firstname+" "+this.secondname;
+        }
+        let obj1=new person("prem","kumar");
+        let obj2=new person("prasath","kumar");
+        console.log(obj1.display());
+        console.log(obj2.display());
+    </script>
+</body>
+</html>
